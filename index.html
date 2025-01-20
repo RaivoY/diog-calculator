@@ -12,22 +12,27 @@
     <input type="" name="name" id="op" placeholder="operative" />
     <input type="number" name="name" id="num2" placeholder="number 2" />
 
-    <button class="rekinat" type="btn">Rēķināt</button>
+    <button class="handleClick" type="btn">Rēķināt</button>
 
     <script>
+      function calculate() {}
+
       const Op = "operative";
       switch (Op) {
-        case (Op = num1 + num2):
+        case "+":
+          result = num1 + num2;
           break;
 
-        case (Op = num1 - num2):
+        case "-":
+          result = num1 - num2;
           break;
 
-        case (Op = num1 * num2):
+        case "*":
+          result = num1 * num2;
           break;
 
-        case (Op = num1 / num2):
-          break;
+        case "/":
+          result = num1 / num2;
 
         default:
           console.log("Kļūda");
